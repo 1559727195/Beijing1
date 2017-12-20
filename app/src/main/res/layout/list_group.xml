@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="false"
+    android:background="@drawable/card_background_sqr_white"
+    android:orientation="vertical"
+     >
+
+    <TextView
+        android:id="@+id/lblListHeader"
+        
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:paddingTop="7dp"
+        android:textSize="22sp" />
+
+</FrameLayout>

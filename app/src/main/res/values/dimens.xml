@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="d10">10dp</dimen>
+    <dimen name="d1">1dp</dimen>
+    <dimen name="d50">50dp</dimen>
+    <dimen name="d8">8dp</dimen>
+
+    <dimen name="main_title_size">18sp</dimen>
+    <dimen name="second_title_size">16sp</dimen>
+    <dimen name="desc_title_size">12sp</dimen>
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="p88">40dp</dimen>
+    <dimen name="p16">8dp</dimen>
+    <dimen name="p29">15dp</dimen>
+    <dimen name="p200">100dp</dimen>
+    <dimen name="p45">22dp</dimen>
+    <dimen name="p66">30dp</dimen>
+    <dimen name="p10">5dp</dimen>
+    <dimen name="p116">55dp</dimen>
+    <dimen name="p24">12sp</dimen>
+    <dimen name="p299">150dp</dimen>
+    <dimen name="p64">32dp</dimen>
+    <dimen name="p300">150dp</dimen>
+    <dimen name="p20">10dp</dimen>
+    <dimen name="p22">11dp</dimen>
+    <dimen name="p202">101dp</dimen>
+    <dimen name="p90">45dp</dimen>
+    <dimen name="p91">45dp</dimen>
+    <dimen name="p50">25dp</dimen>
+    <dimen name="p28">14dp</dimen>
+</resources>

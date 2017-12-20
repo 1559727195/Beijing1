@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#F0F0F1"
+    android:id="@+id/root_linear"
+    android:orientation="vertical">
+    <com.yanzhenjie.statusview.StatusView
+        android:id="@+id/status_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F0F0F1"
+        app:fitsView="@+id/root_linear"/>
+    <LinearLayout
+        android:id="@+id/line_phone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/icon_user" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:text="输入手机号"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <android.support.percent.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp">
+
+            <android.support.percent.PercentRelativeLayout
+                android:id="@+id/percent_rel_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                app:layout_widthPercent="80%">
+
+                <TextView
+                    android:id="@+id/txt_86"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:text="+86"
+                    android:textSize="18sp" />
+
+                <com.massky.new119eproject.util.ClearEditText
+                    android:id="@+id/edit_phone"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerInParent="true"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:hint="手机号"
+                    android:inputType="number"
+                    app:layout_widthPercent="70%" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/edit_phone"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/gray"
+                    app:layout_widthPercent="90%"></View>
+            </android.support.percent.PercentRelativeLayout>
+
+        </android.support.percent.PercentRelativeLayout>
+
+
+        <android.support.percent.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <android.support.percent.PercentRelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                app:layout_widthPercent="80%">
+
+                <com.massky.new119eproject.util.ClearEditText
+                    android:id="@+id/edit_password_new"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:layout_centerInParent="true"
+                    android:hint="密码"
+                    android:inputType="textPassword"
+                    android:maxLength="15"
+                    android:gravity="center"
+                    android:paddingRight="10dp"
+                    app:layout_widthPercent="70%" />
+                <ImageView
+                    android:id="@+id/eyeimageview_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/d10"
+                    android:layout_toRightOf="@+id/edit_password_new"
+                    android:src="@drawable/eyeclose" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/edit_password_new"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/gray"
+                    app:layout_widthPercent="90%"></View>
+            </android.support.percent.PercentRelativeLayout>
+
+        </android.support.percent.PercentRelativeLayout>
+
+        <android.support.percent.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <android.support.percent.PercentRelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                app:layout_widthPercent="80%">
+
+                <com.massky.new119eproject.util.ClearEditText
+                    android:id="@+id/edit_password_again"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:background="@null"
+                    android:layout_centerInParent="true"
+                    android:hint="再次输入密码"
+                    android:inputType="textPassword"
+                    android:maxLength="15"
+                    android:gravity="center"
+                    android:paddingRight="10dp"
+                    app:layout_widthPercent="70%" />
+                <ImageView
+                    android:id="@+id/eyeimageview_id_again"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_toRightOf="@+id/edit_password_again"
+                    android:src="@drawable/eyeclose" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/edit_password_again"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/gray"
+                    app:layout_widthPercent="90%"></View>
+            </android.support.percent.PercentRelativeLayout>
+
+        </android.support.percent.PercentRelativeLayout>
+        <!--<Button-->
+            <!--android:id="@+id/btn_phone"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--android:layout_marginTop="30dp"-->
+            <!--android:background="@null"-->
+            <!--android:text="下一步"-->
+            <!--android:textColor="@color/green_text"-->
+            <!--android:textSize="18sp" />-->
+
+        <android.support.percent.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="30dp"
+            android:layout_height="wrap_content">
+            <Button android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                app:layout_widthPercent="70%"
+                android:text="下一步"
+                android:id="@+id/btn_phone"
+                android:textSize="18sp"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/change_password_radius"
+                />
+
+        </android.support.percent.PercentRelativeLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:id="@+id/new_pass_rel"
+
+        android:layout_height="match_parent">
+        <android.support.percent.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_above="@+id/rel_confirm"
+            android:layout_height="wrap_content">
+            <Button android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                app:layout_widthPercent="70%"
+                android:text="确定注册"
+                android:id="@+id/new_password_confirm"
+                android:textSize="18sp"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/change_password_radius"
+                />
+
+        </android.support.percent.PercentRelativeLayout>
+
+        <android.support.percent.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="30dp"
+            android:id="@+id/rel_confirm"
+            android:layout_centerInParent="true"
+            android:layout_height="wrap_content">
+            <Button android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                app:layout_widthPercent="70%"
+                android:text="去认证"
+                android:id="@+id/renzheng_confirm"
+                android:textSize="18sp"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/change_password_radius"
+                />
+
+        </android.support.percent.PercentRelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

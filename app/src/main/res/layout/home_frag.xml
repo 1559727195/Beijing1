@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#FFFFFF"
+        android:layout_height="50dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/home_login"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/user_pic"/>
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textColor="@color/blue"
+                  android:textSize="12sp"
+                  android:id="@+id/login_txt"
+                  android:text="登录"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="119 e报警"
+            android:layout_centerInParent="true"
+            android:textSize="18sp"
+            android:textColor="#333333"/>
+        <!--<ImageView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="8dp"-->
+        <!--android:id="@+id/wode_setting"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:src="@drawable/wode_setting"/>-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/blue"
+            android:textSize="12sp"
+            android:paddingRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/login_renzheng"
+            android:visibility="gone"
+            android:text="认证"/>
+    </RelativeLayout>
+
+
+    <com.massky.new119eproject.view.WrapContentGridView
+        android:id="@+id/gvSmartItems"
+        android:layout_width="match_parent"
+        android:layout_marginTop="1dp"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:horizontalSpacing="1px"
+        android:listSelector="@null"
+        android:numColumns="3"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="1px"
+        android:focusable="false"
+        >
+    </com.massky.new119eproject.view.WrapContentGridView>
+
+    <!--android:focusable="false"-->
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_marginTop="3dp"
+        android:layout_height="30dp">
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/img_red"
+            android:background="@drawable/retangle_red"/>
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dp"
+            android:layout_centerVertical="true"
+            android:text="北京市消防宣传"
+            android:textColor="#999999"
+            android:layout_toRightOf="@+id/img_red"
+            android:textSize="14dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="更多"
+            android:layout_centerVertical="true"
+            android:textColor="#999999"
+            android:layout_toLeftOf="@+id/img_more"
+            android:textSize="14dp" />
+        <ImageView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:id="@+id/img_more"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:src="@mipmap/arrow_more"/>
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_marginTop="1dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="5dp"
+                android:scaleType="fitXY"
+                android:layout_centerVertical="true"
+                android:id="@+id/img_show_1"
+                android:src="@mipmap/pic_1"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@+id/img_show_1"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tvName_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="京昆高速绵广段车祸：货车擦撞路边护栏引发火灾"
+                    android:paddingRight="5dp"
+                    android:textColor="@color/dark_bg_70p"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2017-11-19"
+                    android:textColor="#999999"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_marginTop="1dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:scaleType="fitXY"
+                android:layout_marginLeft="5dp"
+                android:layout_centerVertical="true"
+                android:id="@+id/img_show_2"
+                android:src="@mipmap/pic_2"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_toRightOf="@+id/img_show_2"
+                android:orientation="vertical"
+                android:layout_marginLeft="8dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tvName_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="广东韶关-男童跌落20米通风井 消防战士绳降救援"
+                    android:paddingRight="5dp"
+                    android:textColor="@color/dark_bg_70p"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2017-11-19"
+                    android:textColor="#999999"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_marginTop="1dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:scaleType="fitXY"
+                android:layout_marginLeft="5dp"
+                android:layout_centerVertical="true"
+                android:id="@+id/img_show_3"
+                android:src="@mipmap/pic_3"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_toRightOf="@+id/img_show_3"
+                android:layout_marginLeft="8dp"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tvName_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="江苏户籍驴友迷路龙王山 安吉消防连夜进山搜救"
+                    android:paddingRight="5dp"
+                    android:textColor="@color/dark_bg_70p"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2017-11-19"
+                    android:textColor="#999999"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_marginTop="3dp"
+            android:layout_height="30dp">
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_centerVertical="true"
+                android:id="@+id/img_red_1"
+                android:background="@drawable/retangle_red"/>
+            <TextView
+                android:id="@+id/tvName_5"
+                android:layout_marginLeft="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_centerVertical="true"
+                android:text="全国消防热点"
+                android:textColor="#999999"
+                android:layout_toRightOf="@+id/img_red_1"
+                android:textSize="14dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="更多"
+                android:layout_centerVertical="true"
+                android:textColor="#999999"
+                android:layout_toLeftOf="@+id/img_more_1"
+                android:textSize="14dp" />
+            <ImageView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:id="@+id/img_more_1"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:src="@mipmap/arrow_more"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_marginTop="1dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:scaleType="fitXY"
+                android:layout_marginLeft="5dp"
+                android:layout_centerVertical="true"
+                android:id="@+id/img_show_4"
+                android:src="@mipmap/pic_4"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_toRightOf="@+id/img_show_4"
+                android:orientation="vertical"
+                android:layout_marginLeft="8dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tvName_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="秋冬天干且风大，火灾隐患要排查，外出要把电源掐，星星之火可燎原，莫让烟头害大家。"
+                    android:paddingRight="5dp"
+                    android:textColor="@color/dark_bg_70p"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2017-11-19"
+                    android:textColor="#999999"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_marginTop="1dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:scaleType="fitXY"
+                android:layout_marginLeft="5dp"
+                android:layout_centerVertical="true"
+                android:id="@+id/img_show_5"
+                android:src="@mipmap/pic_5"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_toRightOf="@+id/img_show_5"
+                android:orientation="vertical"
+                android:layout_marginLeft="8dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tvName_6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="灭掉怒火，放飞快乐；灭掉妒火，放飞平和；灭掉邪火，放飞刚正。"
+                    android:paddingRight="5dp"
+                    android:textColor="@color/dark_bg_70p"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2017-11-19"
+                    android:textColor="#999999"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_marginTop="1dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:scaleType="fitXY"
+                android:layout_marginLeft="5dp"
+                android:layout_centerVertical="true"
+                android:id="@+id/img_show_6"
+                android:src="@mipmap/pic_6"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_toRightOf="@+id/img_show_6"
+                android:orientation="vertical"
+                android:layout_marginLeft="8dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tvName_7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="火灾无情猛于虎，瞬间人财两空无。倾家荡产无影踪，高楼大厦有它掳。"
+                    android:paddingRight="5dp"
+                    android:textColor="@color/dark_bg_70p"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2017-11-19"
+                    android:textColor="#999999"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+        </RelativeLayout></LinearLayout>
+</ScrollView>
+
+</LinearLayout>

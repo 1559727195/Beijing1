@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/root_linear"
+    android:background="#F0F0F1"
+    android:layout_height="match_parent">
+    <com.yanzhenjie.statusview.StatusView
+        android:id="@+id/status_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F0F0F1"
+        app:fitsView="@+id/root_linear"/>
+    <com.massky.new119eproject.view.LazyScrollView
+        android:layout_width="match_parent"
+        android:id="@+id/scroll"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <android.support.percent.PercentRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+
+                <android.support.percent.PercentRelativeLayout
+                    android:id="@+id/percent_rel_qq"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    app:layout_widthPercent="80%">
+                    <com.massky.new119eproject.util.ClearEditText
+                        android:id="@+id/edit_qq"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="5dp"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:hint="qq"
+                        android:inputType="number"
+                        app:layout_widthPercent="70%" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/edit_qq"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/gray"
+                        app:layout_widthPercent="90%"></View>
+                </android.support.percent.PercentRelativeLayout>
+            </android.support.percent.PercentRelativeLayout>
+            <android.support.percent.PercentRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+
+                <android.support.percent.PercentRelativeLayout
+                    android:id="@+id/percent_rel_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    app:layout_widthPercent="80%">
+                    <com.massky.new119eproject.util.ClearEditText
+                        android:id="@+id/edit_name"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="5dp"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:hint="姓名"
+                        android:inputType="text"
+                        app:layout_widthPercent="70%" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/edit_name"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/gray"
+                        app:layout_widthPercent="90%"></View>
+                </android.support.percent.PercentRelativeLayout>
+            </android.support.percent.PercentRelativeLayout>
+            <android.support.percent.PercentRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+
+                <android.support.percent.PercentRelativeLayout
+                    android:id="@+id/percent_rel_weixin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    app:layout_widthPercent="80%">
+                    <com.massky.new119eproject.util.ClearEditText
+                        android:id="@+id/edit_weixin"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="5dp"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:hint="微信号"
+                        android:inputType="text"
+                        app:layout_widthPercent="70%" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/edit_weixin"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/gray"
+                        app:layout_widthPercent="90%"></View>
+                </android.support.percent.PercentRelativeLayout>
+            </android.support.percent.PercentRelativeLayout>
+
+            <android.support.percent.PercentRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+
+                <android.support.percent.PercentRelativeLayout
+                    android:id="@+id/percent_rel_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    app:layout_widthPercent="80%">
+                    <com.massky.new119eproject.util.ClearEditText
+                        android:id="@+id/edit_phone"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="5dp"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:hint="手机号"
+                        android:inputType="number"
+                        app:layout_widthPercent="70%" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/edit_phone"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/gray"
+                        app:layout_widthPercent="90%"></View>
+                </android.support.percent.PercentRelativeLayout>
+            </android.support.percent.PercentRelativeLayout>
+
+           <android.support.percent.PercentRelativeLayout
+            android:layout_width="match_parent"
+               android:layout_marginTop="15dp"
+            android:layout_height="wrap_content">
+      <LinearLayout android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          app:layout_widthPercent="80%"
+          android:layout_centerHorizontal="true"
+          android:orientation="vertical"
+          >
+          <RelativeLayout android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/rel_weixin"
+              app:layout_widthPercent="80%">
+              <ImageView
+                  android:id="@+id/expand_colapse"
+                  android:layout_width="30dp"
+                  android:layout_height="30dp"
+                  android:layout_alignParentLeft="true"
+                  android:layout_centerVertical="true"
+                  android:background="@drawable/togglearrow"
+                  android:focusable="false"
+                  android:focusableInTouchMode="false"
+                  android:textOff=""
+                  android:textOn="" />
+
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textSize="16sp"
+                  android:textColor="#000000"
+                  android:layout_toRightOf="@+id/expand_colapse"
+                  android:id="@+id/txt_weixing"
+                  android:layout_centerVertical="true"
+                  android:layout_marginTop="15dp"
+                  android:text="微型消防站"/>
+          </RelativeLayout>
+          <com.massky.new119eproject.view.ListViewForScrollView
+              android:layout_width="match_parent"
+              android:layout_below="@+id/txt_weixing"
+              android:visibility="gone"
+              android:id="@+id/weixin_xiao_list"
+              android:layout_height="wrap_content"></com.massky.new119eproject.view.ListViewForScrollView>
+      </LinearLayout>
+
+</android.support.percent.PercentRelativeLayout>
+
+            <android.support.percent.PercentRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+
+                <android.support.percent.PercentRelativeLayout
+                    android:id="@+id/percent_rel_xiaofang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    app:layout_widthPercent="80%">
+                    <EditText
+                        android:id="@+id/edit_xiaofang"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="5dp"
+                        android:background="@null"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:gravity="center"
+                        android:hint="请选择站点"
+                        android:inputType="number"
+                        app:layout_widthPercent="70%" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/edit_xiaofang"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/gray"
+                        app:layout_widthPercent="90%"></View>
+                </android.support.percent.PercentRelativeLayout>
+            </android.support.percent.PercentRelativeLayout>
+            <android.support.percent.PercentRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_height="wrap_content">
+                <LinearLayout android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_widthPercent="80%"
+                    android:layout_centerHorizontal="true"
+                    android:orientation="vertical"
+                    >
+                    <RelativeLayout android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rel_work"
+                        app:layout_widthPercent="80%">
+                        <ImageView
+                            android:id="@+id/expand_colapse_work"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/togglearrow"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:textOff=""
+                            android:textOn="" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="16sp"
+                            android:textColor="#000000"
+                            android:layout_toRightOf="@+id/expand_colapse_work"
+                            android:id="@+id/txt_work"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="15dp"
+                            android:text="微型消防站职位"/>
+                    </RelativeLayout>
+                    <com.massky.new119eproject.view.ListViewForScrollView
+                        android:layout_width="match_parent"
+                        android:layout_below="@+id/txt_weixing"
+                        android:visibility="gone"
+                        android:id="@+id/work_xiao_list"
+                        android:layout_height="wrap_content"></com.massky.new119eproject.view.ListViewForScrollView>
+                </LinearLayout>
+
+            </android.support.percent.PercentRelativeLayout>
+            <android.support.percent.PercentRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+
+                <android.support.percent.PercentRelativeLayout
+                    android:id="@+id/percent_rel_work"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    app:layout_widthPercent="80%">
+                    <EditText
+                        android:id="@+id/edit_work"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="5dp"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:hint="请选择职位"
+                        android:inputType="number"
+                        app:layout_widthPercent="70%" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/edit_work"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/gray"
+                        app:layout_widthPercent="90%"></View>
+                </android.support.percent.PercentRelativeLayout>
+            </android.support.percent.PercentRelativeLayout>
+
+            <android.support.percent.PercentRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_height="wrap_content">
+                <Button android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    app:layout_widthPercent="70%"
+                    android:text="提交审核"
+                    android:id="@+id/renzheng_confirm"
+                    android:textSize="18sp"
+                    android:layout_marginBottom="15dp"
+                    android:textColor="#FFFFFF"
+                    android:background="@drawable/change_password_radius"
+                    />
+
+            </android.support.percent.PercentRelativeLayout>
+        </LinearLayout>
+    </com.massky.new119eproject.view.LazyScrollView>
+</LinearLayout>

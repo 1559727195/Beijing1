@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="bg_main">#f8f8f8</color>
+    <color name="text_operation_color">#E02433</color>
+    <color name="text_nav_item">#959595</color>
+    <color name="white">#ffffff</color>
+    <color name="dark_bg_70p">#bb000000</color>
+    <color name="block">#60000000</color>
+    <color name="clear" >#00000000</color>
+    <color name="e0">#E0E0E0</color>
+    <color name="primary_text">#212121</color>
+    <color name="gray">#c8c8c8</color>
+    <color name="blue">#205ba9</color>
+    <color name="smssdk_gray">#ff898989</color>
+    <color name="e30">#303030</color>
+    <!-- camera -->
+    <color name="black">#333333</color>
+    <!-- 橘色字体 -->
+    <color name="green_text">#4CC9C3</color>
+    <color name="minimal_red">#e64c3b</color>
+
+    <color name="camera_progress_three">#24ff00</color>
+    <color name="color_4e3d31">#4e3d31</color>
+    <color name="grey8">#888888</color>
+    <color name="transparent_black_85">#DA000000</color>
+    <color name="ec">#ecebed</color>
+    <color name="ea">#eaeaea</color>
+    <color name="e5c">#303030</color>
+    <color name="c6f">#6f6f6f</color>
+    <color name="color_f6">#f6f6f6</color>
+
+</resources>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:id="@+id/root_linear"
+    android:background="#4CC9C3"
+    android:layout_height="fill_parent">
+    <com.yanzhenjie.statusview.StatusView
+        android:id="@+id/status_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F0F0F1"
+        app:fitsView="@+id/root_linear"/>
+    <LinearLayout
+        android:id="@+id/ll_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F0F0F1"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/easy_you"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="60dp"
+            android:text="119 e报警"
+            android:shadowColor="#B0000000"
+            android:shadowRadius="3.0"
+            android:shadowDx="3.0"
+            android:shadowDy="3.0"
+            android:textColor="@color/gray"
+            android:textSize="28sp"
+            />
+
+        <LinearLayout
+            android:id="@+id/line_second"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.percent.PercentRelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_below="@+id/txt_promat"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/rectangle_login">
+
+                <ImageView
+                    android:id="@+id/img_user"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/user_pic" />
+
+                <com.massky.new119eproject.util.ClearEditText
+                    android:id="@+id/login_user_name"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/img_user"
+                    android:background="@null"
+                    android:hint="用户名"
+                    android:maxLength="11"
+                    android:paddingRight="10dp"
+                    android:textColor="#1d1d26"
+                    android:textSize="15sp"
+                    app:layout_widthPercent="70%" />
+
+            </android.support.percent.PercentRelativeLayout>
+
+            <android.support.percent.PercentRelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/rectangle_login"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_below="@+id/txt_promat"
+                >
+                <ImageView android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/img_password_login"
+                    android:src="@drawable/password_pic"/>
+                <com.massky.new119eproject.util.ClearEditText android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/img_password_login"
+                    android:hint="密码"
+                    android:inputType="textPassword"
+                    app:layout_widthPercent="63%"
+                    android:textSize="15sp"
+                    android:maxLength="11"
+                    android:textColor="#1d1d26"
+                    android:paddingRight="10dp"
+                    android:background="@null"
+                    android:id="@+id/login_password"
+                    />
+
+                <ImageView
+                    android:id="@+id/eyeimageview_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/d10"
+                    android:layout_toRightOf="@+id/login_password"
+                    android:src="@drawable/eyeclose" />
+
+            </android.support.percent.PercentRelativeLayout>
+            <android.support.percent.PercentRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/btn_login"
+                    app:layout_widthPercent="85%">
+
+                    <Button
+                        android:id="@+id/start_btn_store"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/img_login_bg_selector"
+                        android:clickable="true"
+                        android:text="登录"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp" />
+                </RelativeLayout>
+
+            </android.support.percent.PercentRelativeLayout>
+            <android.support.percent.PercentRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    app:layout_widthPercent="85%"
+                    android:layout_width="match_parent"
+                    android:layout_centerInParent="true"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/login_regist"
+                        android:layout_alignParentLeft="true"
+                        android:textColor="@color/gray"
+                        android:text="注册"/>
+                </RelativeLayout>
+            </android.support.percent.PercentRelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
